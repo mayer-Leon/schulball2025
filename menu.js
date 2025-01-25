@@ -4,7 +4,7 @@ function showMenu() {
     mobileMenu.style.opacity = "1";
     mobileMenu.style.transition = "200ms";
     mobileMenu.style.pointerEvents = "all";
-    blur.style.backgroundColor = "#ff9999d1";
+    blur.style.backgroundColor = "#000000d1";
     blur.style.transition = "200ms";
 }
 
