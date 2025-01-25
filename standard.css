@@ -19,8 +19,8 @@
 
 body {
     /* background-color: var(--red1); */
-    background: rgb(165,37,41);
-    background: radial-gradient(circle, rgba(165,37,41,1) 0%, rgb(122, 19, 23) 75%);
+    background: #a52529;
+    background: radial-gradient(circle, #aa3034 0%, #89181c 75%, #6c1013 100%);
     background-attachment: fixed;
     color: #fff;
     font-family: "GT Super Display", sans-serif;
