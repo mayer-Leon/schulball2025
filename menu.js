@@ -5,6 +5,7 @@ function showMenu() {
     mobileMenu.style.pointerEvents = "all";
     let blur = document.querySelectorAll(".blur")[0];
     blur.style.backdropFilter = "blur(10px)";
+    blur.style.webkitBackdropFilter = "blur(10px)";
     blur.style.pointerEvents = "all";
 }
 
@@ -15,5 +16,6 @@ function closeMenu() {
     mobileMenu.style.pointerEvents = "none";
     let blur = document.querySelectorAll(".blur")[0];
     blur.style.backdropFilter = "blur(0px)";
+    blur.style.webkitBackdropFilter = "blur(0px)";
     blur.style.pointerEvents = "none";
 }
