@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speisekarte - Schullball BG Babenbergerring 2025</title>
+    <link rel="stylesheet" href="/schulball2025/standard.css">
+    <link rel="stylesheet" href="/schulball2025/tischreservierung.css">
+    <script src="/schulball2025/menu.js"></script>
+</head>
+<body>
+    <div class="red">
+    </div>
+    <header>
+        <a href="/schulball2025/">
+        <div class="headImage">
+            <img src="/schulball2025/Bilder/Title.jpg" alt="">
+        </div>
+        </a>
+        <div class="headLinks">
+            <a class="links" href="/schulball2025/">Home</a>
+            <a class="links" href="/schulball2025/programm/">Programm</a>
+            <a class="links" href="/schulball2025/speisekarte/">Speisekarte</a>
+            <a class="links active" href="/schulball2025/tischreservierung/">Tischreservierung</a>
+        </div>
+        <div class="headBurger"><span class="esBurger" onclick="showMenu()">☰</span></div>
+    </header>
+    </div>
+    <div id="mobileMenu">
+        <button onclick="closeMenu()">✖</button>
+        <a class="links" href="/schulball2025/">Home</a>
+        <a class="links" href="/schulball2025/programm/">Programm</a>
+        <a class="links" href="/schulball2025/speisekarte/">Speisekarte</a>
+        <a class="links active" href="/schulball2025/tischreservierung/">Tischreservierung</a>
+    </div>
+    <main>
+        <h2><span class="noselect">── </span>Tischreservierung<span class="noselect"> ──</span></h2>
+        <p class="descriptionText">Die Reservierung kostet 3€ pro Person.</p>
+        <form id="tischForm">
+            <div class="input">
+                <label for="fname">Name *</label>
+                <input required type="text" name="Name" id="fname" placeholder="Name">
+            </div>
+            <div class="input">
+                <label for="femail">E-Mail *</label>
+                <input required type="email" name="femail" id="femail" placeholder="E-Mail Adresse">
+            </div>
+            <div class="input">
+                <label for="fphone">Telefon-Nr *</label>
+                <input required type="tel" name="fphone" id="fphone" placeholder="Telefon-Nummer">
+            </div>
+            <div class="input">
+                <label for="fpeople">Für wie viele Personen möchten Sie reservieren? *</label>
+                <input required type="number" max="30" min="1" placeholder="1 - 30" name="fpeople" id="fpeople">
+            </div>
+            <div class="input">
+                <p>Ich stimme hiermit zu, dass meine personenbezogenen Daten von der Ballleitung des 7. Schulballs des Bundesgymnasiums Babenbergerring verarbeitet werden dürfen. Diese Daten werden nach dem 05.02.2025 oder nach Auswahl der Option "Nein" unwiderruflich gelöscht. *</p>
+                <div id="jaNeinDiv">
+                    <div class="radioOption">
+                        <input required type="radio" name="fJaNein" id="fJa" value="Ja">
+                        <label for="fJa">Ja</label>
+                    </div>
+                    <div class="radioOption">
+                        <input required type="radio" name="fJaNein" id="fNein" value="Nein">
+                        <label for="fNein">Nein</label>
+                    </div>
+                </div>
+            </div>
+            <div class="input">
+                <label for="fSonstiges">Sonstige Anmerkungen:</label>
+                <textarea name="fSonstiges" id="fSonstiges" placeholder="Schreibe etwas"></textarea>
+            </div>
+            <input type="submit" name="fSubmit" id="fSubmit" value="Absenden">
+        </form>
+    </main>
+    <footer>
+        <h5>BG Babenbergerring Schulball</h5>
+        <div class="foMenu">
+            <a class="links" href="/schulball2025/">Home</a>
+            <a class="links" href="/schulball2025/programm/">Programm</a>
+            <a class="links" href="/schulball2025/speisekarte/">Speisekarte</a>
+            <a class="links" href="/schulball2025/tischreservierung/">Tischreservierung</a>
+        </div>
+        <div class="foSocial">
+            <a href="https://www.tiktok.com/@bgbabball"><img src="/schulball2025/Bilder/Tiktok.jpg" alt=""></a>
+            <a href="https://www.instagram.com/bgbabball/"><img src="/schulball2025/Bilder/Insta.jpg" alt=""></a>
+            <a href="https://www.facebook.com/profile.php?id=100086708093361"><img src="/schulball2025/Bilder/Facebook.jpg" alt=""></a>
+        </div>
+        <div class="foCredits">
+            <p class="website">Webseite</p>
+            <a href="https://instagram.com/leonm.fotos/" class="leonMayer">Leon Mayer</a>
+        </div>
+    </footer>
+    <div id="blur"></div>
+    
+    <script>
+        const textarea = document.getElementById("fSonstiges");
+
+        function resizeTextarea() {
+            textarea.style.height = 'auto';
+            textarea.style.height = textarea.scrollHeight + 1 + 'px';
+        }
+
+        textarea.addEventListener('input', resizeTextarea);
+
+        // Initial resize
+        resizeTextarea();
+
+        // Resize on window resize
+        window.addEventListener('resize', resizeTextarea);
+    </script>
+    </body>
+    </html>

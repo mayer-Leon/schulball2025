@@ -1,0 +1,37 @@
+.tTime {
+    width: 180px;
+    max-width: 200px;
+    background-color: var(--red4);
+    font-weight: 600;
+}
+
+.tEvent {
+    width: 450px;
+    max-width: 450px;
+    background-color: var(--red5);
+}
+
+td {
+    border-radius: 5px;
+    font-size: 1.15rem;
+    padding: 18px;
+    line-height: 2.2rem;
+}
+
+@media (max-width: 440px) {
+    td {
+        font-size: 1.05rem;
+        padding: 12px;
+    }
+}
+
+#programmSection {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#afterparty {
+    font-size: 1.3rem;
+    margin-top: 20px;
+}

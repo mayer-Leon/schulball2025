@@ -1,0 +1,129 @@
+#logo {
+    width: 800PX;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+
+h1 {
+    margin-bottom: 0;
+    line-height: 50px;
+    font-weight: 900;
+}
+
+#intro {
+    margin: auto;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 70px;
+}
+
+.noHead {
+    margin-top: 0px;
+}
+
+.bold {
+    display: inline-block;
+    font-weight: 800;
+    font-size: 1.5rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-style: italic;
+}
+
+h4 {
+    font-size: 35px;
+    font-weight: 900;
+    margin-bottom: 0;
+}
+
+#factBox {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+
+    width: 100%;
+    background-color: var(--red4);
+    padding: 20px;
+    border-radius: 5px;
+    margin: 0;
+    padding-left: 0;
+    padding-right: 0;
+    margin-top: 10px;
+}
+
+.box div {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.box div a {
+    font-size: 15px;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+}
+
+.small {
+    width: calc(50% - 5px);
+    margin-top: 0;
+}
+
+.box img {
+    width: 25px;
+    height: 25px;
+}
+
+.box h6, .box a {
+    font-weight: 700;
+    font-size: 20px;
+    margin: 0;
+}
+
+@media (max-width: 550px) {
+    .small {
+        width: 100%;
+    }
+}
+
+#karten {
+    background-color: var(--red5);
+    border-radius: 5px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-top: 20px;
+}
+
+#karten h6 {
+    margin-top: 0;
+}
+
+#sponsoren {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    width: 100%;
+}
+
+.sponsor {
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 400;
+}
